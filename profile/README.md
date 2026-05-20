@@ -45,11 +45,11 @@ Diagramas previstos:
 
 | Nome | E-mail institucional |
 |---|---|
-| Gabriel Fujii | email@unisantos.br |
-| Nome do aluno 2 | email@unisantos.br |
-| Nome do aluno 3 | email@unisantos.br |
-| Nome do aluno 4 | email@unisantos.br |
-| Nome do aluno 5 | email@unisantos.br |
+| GABRIEL FUJII | gabriel.fujii@unisantos.br |
+| BRENO OLIVEIRA  | b.severino@unisantos.br |
+| FELIPE SHINZATO  | shinzato@unisantos.br |
+| DANIEL THALYS | dthalys@unisantos.br |
+| JOÃO VITOR TEODORO  | joaonascimento@unisantos.br |
 
 ## Fluxo de desenvolvimento
 
