@@ -12,8 +12,8 @@ A aplicação tem como objetivo permitir que a serralheria organize seus dados p
 
 | Repositório | Descrição |
 |---|---|
-| projeto-jl-serralheria | Aplicativo principal desenvolvido em Flutter |
-| modelo-uml | Repositório com os diagramas UML do projeto |
+| `projeto-jl-serralheria` | Aplicativo principal desenvolvido em Flutter |
+| `modelo-uml` | Repositório com os diagramas UML do projeto |
 
 ## Organização do projeto
 
@@ -29,7 +29,7 @@ Contém o aplicativo principal, incluindo:
 - Criação de orçamentos
 - Listagem de orçamentos
 - Detalhamento de orçamento
-- Geração de PDF
+- Geração e compartilhamento de PDF do orçamento
 
 ### modelo-uml
 
@@ -46,10 +46,10 @@ Diagramas previstos:
 | Nome | E-mail institucional |
 |---|---|
 | GABRIEL FUJII | gabriel.fujii@unisantos.br |
-| BRENO OLIVEIRA  | b.severino@unisantos.br |
-| FELIPE SHINZATO  | shinzato@unisantos.br |
+| BRENO OLIVEIRA | b.severino@unisantos.br |
+| FELIPE SHINZATO | shinzato@unisantos.br |
 | DANIEL THALYS | dthalys@unisantos.br |
-| JOÃO VITOR TEODORO  | joaonascimento@unisantos.br |
+| JOÃO VITOR TEODORO | joaonascimento@unisantos.br |
 
 ## Fluxo de desenvolvimento
 
@@ -72,4 +72,50 @@ Antes de iniciar uma nova tarefa:
 git checkout develop
 git pull
 git checkout -b feature/nome-da-tarefa
+```
 
+Antes de abrir Pull Request:
+
+```bash
+flutter analyze
+flutter test
+```
+
+Depois de finalizar a tarefa:
+
+```bash
+git add .
+git commit -m "Descreve a alteração realizada"
+git push -u origin feature/nome-da-tarefa
+```
+
+O Pull Request deve ser aberto sempre para:
+
+```text
+feature/nome-da-tarefa -> develop
+```
+
+## Regras importantes
+
+- Não trabalhar diretamente na branch `main`.
+- Não trabalhar diretamente na branch `develop`, exceto em ajustes de integração combinados pelo grupo.
+- Cada funcionalidade deve ser feita em uma branch `feature/*`.
+- Antes de abrir Pull Request, o projeto deve passar em `flutter analyze`.
+- Pull Requests devem ser revisados antes do merge.
+- A branch `main` deve receber apenas a versão final ou estável do projeto.
+
+## Estado atual do projeto
+
+O projeto está em fase de integração das funcionalidades principais:
+
+- Clientes
+- Produtos
+- Serviços
+- Orçamentos
+- Geração de PDF
+- Documentação
+- Testes finais
+
+## Objetivo da entrega
+
+Entregar um aplicativo Flutter funcional para apoiar a rotina da serralheria, permitindo cadastrar dados principais, montar orçamentos, calcular valores automaticamente e gerar um PDF para envio ao cliente.
